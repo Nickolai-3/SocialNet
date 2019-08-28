@@ -8,7 +8,7 @@ const Profile = () => {
     </div>
     <div>Flsj
   </div>
-    <div>лоло Post
+    <div>Привет Post
 
   </div>
     <div>Post11</div>
@@ -16,4 +16,4 @@ const Profile = () => {
   </div>
   )
 }
-export default Profile;
+export default Profile;   
