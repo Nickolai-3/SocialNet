@@ -11,7 +11,7 @@ const Profile = () => {
     <div>Привет Post
 
   </div>
-    <div>Post11</div>
+    <div>Post21</div>
     <div>Post2</div>
   </div>
   )
