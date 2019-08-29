@@ -8,7 +8,7 @@ const Profile = () => {
     <div className={`${s.content} ${s.content.img}`}>
       <img src='https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg' />
       <div> <img src='http://webresizer.com/images2/bird1_before.jpg'></img>
-        <MyPost />
+        <MyPost mess="Hi" />
       </div>
     </div>
 
