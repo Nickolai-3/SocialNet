@@ -5,8 +5,11 @@
 
 }
 
-.content img {
-  width: 1200px;
+.content.img {
+  width: 100px;
   height: 400px;
+}
+.item{
+  color: blue;
 }
 
