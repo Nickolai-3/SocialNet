@@ -9,7 +9,10 @@
   grid-template-columns: 2fr 11fr;
   /* grid-gap: 10px;} */
 }
-
+.app-wrapper_content {
+  grid-area: c;
+  background: rgb(111, 160, 216)
+}
 
 
 

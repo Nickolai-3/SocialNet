@@ -5,11 +5,17 @@
 
 }
 
-.content.img {
-  width: 100px;
-  height: 400px;
+.item {
+  width: auto;
+  height:auto;
 }
-.item{
+
+.item_img {
+  width: auto;
+  height: auto;
+}
+
+/* .item{
   color: blue;
-}
+} */
 
