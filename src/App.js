@@ -13,7 +13,7 @@ const App = () => {
         <Header />
         <Navbar />
         <div className='app-wrapper_content'>
-          <Route path='/Dialogs' component={Dialogs} />
+          <Route path='/dialogs' component={Dialogs} />
           <Route path='/profile' component={Profile} />
           <Route path='/news' component={Profile} />
           <Route path='/music' component={Profile} />
