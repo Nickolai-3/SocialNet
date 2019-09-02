@@ -1,8 +1,11 @@
 
 .content {
   grid-area: c;
-  background: yellow;
-
+  background: rgb(63, 204, 82);
+  padding: 10px;
 }
 
+.marg {
+  margin-top:10px;
+}
 

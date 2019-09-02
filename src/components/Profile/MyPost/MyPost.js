@@ -1,23 +1,34 @@
 import React from 'react';
-import s from './MyPost.module.css';
 import Post from './Post/Post';
 import Like from './Post/Like';
+import s from './MyPost.module.css';
 
 
 const MyPost = (props) => {
-debugger;
+  let LikeData = [
+    {id:"77"},
+    {id:"24"},
+    {id:"12"}
+  ]
+  
   return (
-    <div className={s.item}>MyPost
-                  <div>
-        <textarea></textarea>
-        <button>Add Post</button>
-        <Post message="hello, How are you?" />
-        <Like value ="49"/>
+    <div className={s.content}> <h2>MyPost</h2>
+      <div>
+        <div>
+          <textarea></textarea>
+        </div>
+        <div>
+          <button>Add Post</button>
+        </div>
+        <div className={s.marg}>
+          <Post message="hello, How are you?"  />
+          <Like id={LikeData[0].id} />
 
-        <Post message="Hi, I am fine" />
-        <Like value ="77"/>
+          <Post message="Hi, I am fine" />
+          <Like id={LikeData[1].id} />
+        </div>
 
-        
+
       </div>
     </div>
 
