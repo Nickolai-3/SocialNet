@@ -10,6 +10,12 @@ const MyPost = (props) => {
     {id:"24"},
     {id:"12"}
   ]
+  let PostData = [
+    {message: "hello, How are you?"},
+    {message: "Hi, I am fine"}
+  ]
+  let PostElements = PostData.map(pd=><Post message={pd.message}/>)
+  let LikesElements = LikeData.map(ld=><Post message={ld.id}/>)
   
   return (
     <div className={s.content}> <h2>MyPost</h2>
@@ -21,11 +27,16 @@ const MyPost = (props) => {
           <button>Add Post</button>
         </div>
         <div className={s.marg}>
-          <Post message="hello, How are you?"  />
-          <Like id={LikeData[0].id} />
+          {PostElements}
+          {LikesElements}
+        
+        {/* <Post message={PostData[0].message}/>          <Like id={LikeData[0].id} />
 
-          <Post message="Hi, I am fine" />
-          <Like id={LikeData[1].id} />
+        <Post message={PostData[1].message}/>          <Like id={LikeData[1].id} /> */}
+
+          {/* <Post message="hello, How are you?"  /> */}
+
+          {/* <Post message="Hi, I am fine" /> */}
         </div>
 
 

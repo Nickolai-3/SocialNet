@@ -21,7 +21,7 @@ const Message = (props) => {
 
 const Dialogs = (props) => {
    
-    let dialogsData = 
+    let dialogs = 
     [
         { id: 1, name:"Dima" },
         { id: 2, name:"Nick" },
@@ -29,35 +29,45 @@ const Dialogs = (props) => {
         { id: 4, name:"Vera" },
         { id: 5, name:"Cristina" },
         { id: 6, name:"Nastya" }
-    ]
-        let messageData = [
-            { id: 1, message:"Hi" },
-            { id: 2, message:"Hello" },
-            { id: 3, message:"Yo" },
-            { id: 4, message:"sdff" },
-            { id: 5, message:"Ysfsdfo" },
-]
+    ];
+
+    let messages = [
+        { message:"Hi" },
+        { message:"Hello" },
+        { message:"Yo" },
+        { message:"sdff" },
+        { message:"Ysfsdfo" },]
+
+    let dialogsElements= dialogs.map (d => <DialogsItem name= {d.name} id={d.id}/>);
+        
+    
+            
+    let messageElements=messages.map(m=><Message message={m.message} />);        
+
+
+
 
     return (
         <div className={s.apper}>
             <div className={s.dialog} >
-                Dialogs
-                <DialogsItem name={dialogsData[0].name} id={dialogsData[0].id} />
-                <DialogsItem name={dialogsData[1].name} id={dialogsData[1].id} />
-                <DialogsItem name={dialogsData[2].name} id={dialogsData[2].id} />
-                <DialogsItem name={dialogsData[3].name} id={dialogsData[3].id} />
-                <DialogsItem name={dialogsData[4].name} id={dialogsData[4].id} />
-                <DialogsItem name={dialogsData[5].name} id={dialogsData[5].id} />
-               
+                {/* Dialogs
+                <DialogsItem name= dialogs[0].name} id= dialogs[0].id} />
+                <DialogsItem name= dialogs[1].name} id= dialogs[1].id} />
+                <DialogsItem name= dialogs[2].name} id= dialogs[2].id} />
+                <DialogsItem name= dialogs[3].name} id= dialogs[3].id} />
+                <DialogsItem name= dialogs[4].name} id= dialogs[4].id} />
+                <DialogsItem name= dialogs[5].name} id= dialogs[5].id} /> */}
+               {dialogsElements}
             </div>
 
             <div className={s.message}>
-                Message
-            <Message message={messageData[0].message} id={messageData[0].id} />
-            <Message message={messageData[1].message} id={messageData[1].id} />
-            <Message message={messageData[2].message} id={messageData[2].id} />
-            <Message message={messageData[3].message} id={messageData[3].id} />
-            <Message message={messageData[4].message} id={messageData[4].id} />
+                {/* Message
+            <Message message={messages[0].message} id={messages[0].id} />
+            <Message message={messages[1].message} id={messages[1].id} />
+            <Message message={messages[2].message} id={messages[2].id} />
+            <Message message={messages[3].message} id={messages[3].id} />
+            <Message message={messages[4].message} id={messages[4].id} /> */}
+            {messageElements}
 
                
             </div>
