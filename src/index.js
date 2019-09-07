@@ -4,7 +4,22 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+let messages = [
+    { message: "Hi" },
+    { message: "Hello" },
+    { message: "Yo" },
+    { message: "sdff" },
+    { message: "Ysfsdfo" },]
+let dialogs = [
+    { id: 1, name: "Dima" },
+    { id: 2, name: "Nick" },
+    { id: 3, name: "Sasha" },
+    { id: 4, name: "Vera" },
+    { id: 5, name: "Cristina" },
+    { id: 6, name: "Nastya" }
+];
+ReactDOM.render(<App messages={messages} dialogs={dialogs} />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

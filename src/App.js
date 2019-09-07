@@ -6,18 +6,18 @@ import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
 import { BrowserRouter, Route } from "react-router-dom";
 
-const App = () => {
-  debugger;
+const App = (props) => {
+
   return (
     <BrowserRouter>
       <div className='app-wrapper'>
         <Header />
         <Navbar />
         <div className='app-wrapper_content'>
-          <Route path='/dialogs' render={() => <Dialogs/>}></Route>
-            <Route path='/profile' render={() => <Profile/>}></Route>
+          <Route path='/dialogs' render={() => <Dialogs messages={props.messages} dialogs={props.dialogs} />}></Route>
+          <Route path='/profile' render={() => <Profile />}></Route>
         </div>
       </div>
     </BrowserRouter>)
-  }
+}
 export default App;
