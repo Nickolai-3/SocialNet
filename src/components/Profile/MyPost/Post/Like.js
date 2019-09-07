@@ -13,7 +13,7 @@ const Like = (props) => {
       <div className={s.item}>
 
         <img src='https://www.pinclipart.com/picdir/middle/357-3571100_like-png-logo-facebook-me-gusta-vector-clipart.png'></img>
-        {props.id}
+        
 
 
       </div>
